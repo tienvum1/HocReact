@@ -1,0 +1,373 @@
+/* Git Commands Component Styles */
+.git-commands {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+/* Header */
+.commands-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.commands-header h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.commands-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Commands Container */
+.commands-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Steps Sidebar */
+.steps-sidebar {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 1rem;
+  height: fit-content;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-item:hover {
+  background: #e3f2fd;
+  transform: translateX(5px);
+}
+
+.step-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.step-item.completed {
+  background: #d4edda;
+  border-left: 4px solid #28a745;
+}
+
+.step-item.completed.active {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.step-number {
+  background: rgba(255, 255, 255, 0.2);
+  color: #667eea;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.step-item.active .step-number {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.step-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step-icon {
+  font-size: 1.2rem;
+}
+
+.step-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.check-mark {
+  margin-left: auto;
+}
+
+/* Step Detail */
+.step-detail {
+  background: #fff;
+}
+
+.detail-card {
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-icon {
+  font-size: 2rem;
+}
+
+.detail-header h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Command Box */
+.command-box {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.command-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.copy-btn {
+  background: transparent;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #333;
+  border-color: #777;
+}
+
+.command-text {
+  display: block;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Example Box */
+.example-box {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 4px solid #667eea;
+}
+
+.example-label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.example-text {
+  display: block;
+  font-family: 'Courier New', monospace;
+  color: #495057;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+/* Clone Explanation Styles */
+.clone-explanation {
+  margin-top: 2rem;
+  background: #f0f7ff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 5px solid #4285f4;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.clone-explanation h4 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clone-benefits {
+  list-style: none;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.clone-benefits li {
+  background: white;
+  padding: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease;
+}
+
+.clone-benefits li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.clone-steps {
+  background: white;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.clone-steps h5 {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.clone-steps ol {
+  padding-left: 1.5rem;
+}
+
+.clone-steps li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+.clone-steps code {
+  background: #f8f9fa;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #e83e8c;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Progress Section */
+.progress-section {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.progress-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  background: #e9ecef;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.progress-fill {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .commands-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .steps-sidebar {
+    order: 2;
+  }
+  
+  .step-detail {
+    order: 1;
+  }
+  
+  .detail-card {
+    padding: 1.5rem;
+  }
+  
+  .step-item {
+    padding: 0.8rem;
+  }
+  
+  .step-title {
+    font-size: 0.8rem;
+  }
+  
+  .clone-benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .git-commands {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .commands-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .detail-header h3 {
+    font-size: 1.2rem;
+  }
+}

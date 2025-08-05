@@ -1,0 +1,364 @@
+/* Branching Page Styles */
+.branching-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Section Tabs */
+.section-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  background: white;
+  border: 2px solid #e1e5e9;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.tab:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.tab.active {
+  background: #667eea;
+  border-color: #667eea;
+  color: white;
+}
+
+/* Section Content */
+.section-content {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Overview Section */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.concept-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.concept-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.concept-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.concept-card ul {
+  color: #555;
+  line-height: 1.8;
+}
+
+.concept-card li {
+  margin-bottom: 0.5rem;
+}
+
+.naming-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.naming-examples code {
+  background: #2d3748;
+  color: #68d391;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Commands Section */
+.commands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.command-group {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-top: 4px solid #667eea;
+}
+
+.group-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.group-icon {
+  font-size: 1.5rem;
+}
+
+.commands-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.command-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid #ffd700;
+}
+
+.command {
+  background: #2d3748;
+  color: #ffd700;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.command-desc {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Workflow Section */
+.workflow-container {
+  margin-bottom: 3rem;
+}
+
+.workflow-container h3 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.workflow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.step-number {
+  background: #667eea;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.step-command {
+  background: #2d3748;
+  color: #68d391;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  overflow-x: auto;
+}
+
+.step-description {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Branch Visualization */
+.branch-visualization {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e5e9;
+}
+
+.branch-visualization h3 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.git-graph {
+  background: #1a202c;
+  padding: 2rem;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.branch-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.branch-label {
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.commits {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 1rem;
+}
+
+.commit {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #68d391;
+  color: #1a202c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.commit.merge {
+  background: #ffd700;
+}
+
+.main-branch .commit::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2rem;
+  height: 2px;
+  background: #68d391;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.feature-branch {
+  margin-left: 2rem;
+}
+
+.feature-branch .branch-label {
+  color: #ffd700;
+}
+
+.feature-branch .commit {
+  background: #ffd700;
+  color: #1a202c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .branching-page {
+    padding: 1rem;
+  }
+  
+  .section-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .overview-grid,
+  .commands-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .workflow-step {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .git-graph {
+    padding: 1rem;
+  }
+  
+  .commits {
+    gap: 1rem;
+  }
+}
